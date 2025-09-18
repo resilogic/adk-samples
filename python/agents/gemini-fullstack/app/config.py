@@ -23,10 +23,11 @@ import google.auth
 #    GOOGLE_API_KEY=PASTE_YOUR_ACTUAL_API_KEY_HERE
 # 2. This will override the default Vertex AI configuration
 _, project_id = google.auth.default()
-os.environ.setdefault("GOOGLE_CLOUD_PROJECT", project_id)
-os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "global")
-os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "True")
-
+#os.environ.setdefault("GOOGLE_CLOUD_PROJECT", project_id)
+#os.environ.setdefault("GOOGLE_CLOUD_LOCATION", "global")
+#os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "True")
+os.environ.setdefault("GOOGLE_GENAI_USE_VERTEXAI", "False")
+os.environ.setdefault("GOOGLE_API_KEI", "AIzaSyCBNAtoHfH0E4PNePnWWnqDWublA1y52m0")
 
 @dataclass
 class ResearchConfiguration:
